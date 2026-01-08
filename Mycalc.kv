@@ -1,0 +1,136 @@
+<calculate>
+  
+    
+  calc_field:calc_field
+  orientation:'vertical'
+  TextInput:
+    multiline:False
+    id:calc_field
+    readonly:True
+    height:100
+    font_size:60
+    size_hint:(1,None)
+
+  GridLayout:
+    canvas.before:
+      Color:
+        rgb:225,225,225
+
+    rows:5
+    columns:4
+    
+    spacing:10
+    padding:10
+
+    Button:
+      text:"Pneutechorg"
+      font_siz:130
+    
+
+    Button:
+      text:"C"
+      font_siz:130
+      on_press:root.calc_clear()
+
+    Button:
+      text:"%"
+      font_siz:130
+      on_press:root.calc_symbol('%')
+
+
+    Button:
+      text:"/"
+      font_siz:130
+      on_press:root.calc_symbol('/')
+
+    Button:
+      text:"7"
+      font_siz:130
+      on_press:root.calc_symbol('7')  
+
+
+    Button:
+      text:"8"
+      font_siz:130
+      on_press:root.calc_symbol('8') 
+
+
+    Button:
+      text:"9"
+      font_siz:130
+      on_press:root.calc_symbol('9')   
+
+    Button:
+      text:"*"
+      font_siz:130
+      on_press:root.calc_symbol('*')   
+
+    Button:
+      text:"4"
+      font_siz:130
+      on_press:root.calc_symbol('4')
+
+    Button:
+      text:"5"
+      font_siz:130
+      on_press:root.calc_symbol('5') 
+
+    Button:
+      text:"6"
+      font_siz:130
+      on_press:root.calc_symbol('6')
+
+    Button:
+      text:"-"
+      font_siz:130
+      on_press:root.calc_symbol('-') 
+
+    Button:
+      text:"1"
+      font_siz:130
+      on_press:root.calc_symbol('1')
+
+    Button:
+      text:"2"
+      font_siz:130
+      on_press:root.calc_symbol('2')
+
+
+    Button:
+      text:"3"
+      font_siz:130
+      on_press:root.calc_symbol('3') 
+
+
+    Button:
+      text:"+"
+      font_siz:130
+      on_press:root.calc_symbol('+')  
+    
+
+    Button:
+      text:"~"
+      font_siz:130
+      on_press:root.calc_symbol('~') 
+      
+
+
+    Button:
+      text:"0"
+      font_siz:130
+      on_press:root.calc_symbol('0')
+      
+    
+
+    Button:
+      text:"."
+      font_siz:130
+      on_press:root.calc_symbol('.')
+      
+
+
+    Button:
+      text:"="
+      font_siz:130
+      
+      on_press:root.get_result()
